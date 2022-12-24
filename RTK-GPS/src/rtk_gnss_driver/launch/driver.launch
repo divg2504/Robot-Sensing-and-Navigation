@@ -1,0 +1,5 @@
+<launch>
+	<arg name="port" />
+	<node name="gps_driver" pkg="rtk_gnss_driver" type="GNSS_driver.py" args="$(arg port) output="log"/>
+	<node name="gps_driver" pkg="rtk_gnss_driver" type="GNSS_driver.py" args="$(arg port) output="log"/>
+</launch>

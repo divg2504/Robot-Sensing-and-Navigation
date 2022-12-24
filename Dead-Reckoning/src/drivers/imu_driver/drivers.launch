@@ -1,0 +1,9 @@
+<launch>
+	<arg name="gps_port" />
+	<arg name="imu_port" />
+	<param name="gps_port"  value="$(arg gps_port)"/>
+	<param name="imu_port"  value="$(arg imu_port)"/>
+	<node name="gpsNode" pkg="gps_driver" type="driver.py" args="$(arg gps_port)" output="log"/>
+	<node name="imu_driver" pkg="imu_driver" type="driver.py" args="$(arg imu_port)" output="screen"/>
+	
+</launch>
