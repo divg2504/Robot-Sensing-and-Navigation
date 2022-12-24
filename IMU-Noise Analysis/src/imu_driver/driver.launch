@@ -1,5 +1,7 @@
 <launch>
 	<arg name="port" />
+	<arg name="freq" />
 	<param name="imu_port"  value="$(arg port)"/>
+	<param name="imu_freq"  value="$(arg freq)"/>
 	<node name="imu_driver" pkg="imu_driver" type="driver.py" args="$(arg port)" output="screen"/>
 </launch>
