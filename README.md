@@ -33,3 +33,6 @@ In this lab, we collected inertial and gps data using [NUance car](https://field
 
 ### Image-Stitching
 In this lab, we used CALTECH camera toolbox to calibrate the phone camera, and generated panaroma of these calibrated images from different scenes and overlapping. We worked with harris-corner detector and and iterated with different parameters to generate the panaroma for a set of images. MATLAB script is based on [MATLAB Photomosaicing](https://www.mathworks.com/help/vision/ug/feature-based-panoramic-image-stitching.html?searchHighlight=panorama&s_tid=doc_srchtitle).
+
+### SLAM-VSLAM
+This was a group project (3-weeks), where we implemented different SLAM (HDL-GraphSLAM and LEGO-LOAM) and VSLAM (RTABMAP and ORB SLAM3) algorithms on KITTI-dataset and further used YOLO to detect traffic-signs and map them on the 2D trajectory. Reference on how to use each individual algorithm and analysis can be found in the README file inside SLAM-VSLAM folder. 
