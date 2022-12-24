@@ -59,6 +59,10 @@ def data_formating():
 
 def GPS_to_UTM():
 	global easting,northing,zone,letter, lat_v, long_v
+	if lat_d == 'S':
+		lat_v = -1*lat_v
+	if long_d == 'W':
+		long_v = -1*long_v
 	easting, northing, zone, letter = utm.from_latlon(lat_v,long_v)
 
 def publish_gps_data(gps_pub):
